@@ -2,11 +2,10 @@ import os
 from autogen import AssistantAgent, UserProxyAgent
 from dotenv import load_dotenv
 
-# Load your OpenAI API key
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
-# Create the assistant agent
+# Creating the assistant agent
 assistant = AssistantAgent(
     name="CodeHelper",
     llm_config={
